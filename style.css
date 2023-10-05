@@ -10,7 +10,7 @@ body {
     background-color: #222;
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 550px) {
     .card {
         background: linear-gradient(135deg, #00feba, #5b548a);
         color: #fff;
@@ -46,6 +46,11 @@ body {
     .col {
         grid-template-columns: 1fr;
         grid-template-rows: 1fr 1fr;
+    }
+
+    .col img {
+        display: block;
+        margin: 0 auto;
     }
 }
 
@@ -111,15 +116,17 @@ body {
 }
 
 .details {
-    display: flex;
+    display: grid;
     justify-content: space-between;
+    align-content: center;
     padding: 0 20px;
     margin-top: 40px;
     align-items: center;
+    grid-template-columns: 1fr 1fr;
 }
 
 .col {
-    display: flex;
+    display: grid;
     align-items: center;
     text-align: left;
 }
@@ -127,6 +134,19 @@ body {
 .col img {
     width: 40px;
     margin-right: 10px;
+    display: inline-block;
+    margin: 0 auto;
+}
+
+.col p {
+    margin: 0 auto;
+    display: inline-block;
+    align-items: center;
+}
+
+.sub-div {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
 }
 
 .humidity .Wind {
